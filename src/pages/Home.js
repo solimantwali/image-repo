@@ -8,6 +8,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+//const imgPath = '../assets';
+
+
 const useStyles = makeStyles({
   root: {
     maxWidth: 345,
@@ -22,9 +25,11 @@ export default function ImgMediaCard() {
       <CardActionArea>
         <CardMedia
           component="img"
+          src = {require('../assets/lizord.jpg')}
           alt="Contemplative Reptile"
           height="140"
-          image={require('/assets/lizord.jpg')}
+          
+          
           title="Contemplative Reptile"
         />
         <CardContent>

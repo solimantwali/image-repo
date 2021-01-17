@@ -8,8 +8,6 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
-//const imgPath = '../assets';
-
 
 const useStyles = makeStyles({
   root: {
@@ -25,10 +23,9 @@ export default function ImgMediaCard() {
       <CardActionArea>
         <CardMedia
           component="img"
-          src = {require('../assets/lizord.jpg')}
+          src = {require('../assets/lizord.jpg').default}
           alt="Contemplative Reptile"
           height="140"
-          
           
           title="Contemplative Reptile"
         />
@@ -37,7 +34,7 @@ export default function ImgMediaCard() {
             Lizard
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are fuckin dope lol a widespread group of squamate reptiles, with over 6,000 species, ranging
+            Lizards are fuckin dope lol! a widespread group of squamate reptiles, with over 6,000 species, ranging
             across all continents except Antarctica
           </Typography>
         </CardContent>
